@@ -37,7 +37,7 @@ export const timeline = [
   {
     date: 'October 14, 2026',
     title: 'First video call and Darling Harbour',
-    body: "The first time they saw each other through a screen. He was nervous at first, fumbling with the camera, laughing a little too easily. Then he walked her through Darling Harbour, the city lights behind him, the breeze catching his voice, and little by little the nerves softened into something steadier. Her smile lit up Sydney in a way the skyline never had.",
+    body: "The first time they saw each other through a screen. He was nervous at first, fumbling with the camera, laughing a little too easily. Then he walked her through Darling Harbour, the city lights behind him, the breeze catching his voice and little by little the nerves softened into something steadier. Her smile lit up Sydney in a way the skyline never had.",
     tag: 'First time he saw her smile',
     scene: 'harbour',
   },
