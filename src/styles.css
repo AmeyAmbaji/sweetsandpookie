@@ -44,20 +44,9 @@ body {
 /* Mobile: fixed-attachment and heavy filters tank scroll perf on iOS/Android */
 @media (max-width: 900px) {
   body { background-attachment: scroll; }
-  body::after { display: none; }
 }
 
-/* Film grain overlay — subtle premium texture */
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 50;
-  opacity: 0.06;
-  mix-blend-mode: overlay;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
-}
+/* (Film grain removed — cleaner backdrop lets the editorial type carry it) */
 
 /* Starfield */
 .stars {
@@ -488,6 +477,67 @@ body::after {
   color: var(--ink);
   font-weight: 500;
 }
+/* Editorial drop cap — like the opening letter of a love note */
+.event-body::first-letter {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 3.4em;
+  line-height: 0.85;
+  float: left;
+  padding: 0.08em 0.12em 0 0;
+  margin-right: 0.04em;
+  background: linear-gradient(135deg, #f6d8a0 0%, #ff8fb3 60%, #c9a0ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 24px rgba(246, 216, 160, 0.25);
+}
+.timeline-event.left .event-body { text-align: right; }
+.timeline-event.left .event-body::first-letter {
+  float: right;
+  padding: 0.08em 0 0 0.12em;
+  margin-left: 0.04em;
+}
+@media (max-width: 768px) {
+  .timeline-event.left .event-body { text-align: left; }
+  .timeline-event.left .event-body::first-letter {
+    float: left;
+    padding: 0.08em 0.12em 0 0;
+    margin-right: 0.04em;
+  }
+}
+
+/* Chapter-dot tooltip */
+.event-heart {
+  cursor: default;
+}
+.event-heart-tip {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 10px);
+  transform: translateX(-50%) translateY(4px);
+  padding: 0.35rem 0.7rem;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: rgba(26, 13, 56, 0.92);
+  border: 1px solid rgba(201, 160, 255, 0.3);
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+  z-index: 5;
+}
+.event-heart:hover .event-heart-tip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+@media (hover: none) { .event-heart-tip { display: none; } }
 
 .event-foot {
   margin-top: 1rem;

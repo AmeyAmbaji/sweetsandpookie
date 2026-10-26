@@ -426,6 +426,19 @@ function SceneArt({ type, event }) {
   }
 }
 
+const cardStagger = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.09, delayChildren: 0.15 } },
+};
+const rise = {
+  hidden: { opacity: 0, y: 18 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.75, ease: [0.22, 1, 0.36, 1] } },
+};
+const sceneRise = {
+  hidden: { opacity: 0, y: 24, scale: 0.96 },
+  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.9, ease: [0.22, 1, 0.36, 1] } },
+};
+
 function TimelineEvent({ event, index, total }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, amount: 0.25 });
@@ -436,29 +449,24 @@ function TimelineEvent({ event, index, total }) {
     <div ref={ref} className={`timeline-event ${side}`}>
       <motion.div
         className="event-card"
-        initial={{ opacity: 0, x: side === 'left' ? -60 : 60, y: 30 }}
-        animate={inView ? { opacity: 1, x: 0, y: 0 } : {}}
-        transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+        variants={cardStagger}
+        initial="hidden"
+        animate={inView ? 'visible' : 'hidden'}
       >
-        <span className="event-ghost-date">{event.date}</span>
-        <div className="event-head">
+        <motion.span className="event-ghost-date" variants={rise}>{event.date}</motion.span>
+        <motion.div className="event-head" variants={rise}>
           <span className="event-chapter">{chapter}<i> / {String(total).padStart(2, '0')}</i></span>
-        </div>
-        <h3 className="event-title" dangerouslySetInnerHTML={{ __html: event.title }} />
-        <p className="event-body" dangerouslySetInnerHTML={{ __html: event.body }} />
-        <div className="event-foot">
+        </motion.div>
+        <motion.h3 className="event-title" variants={rise} dangerouslySetInnerHTML={{ __html: event.title }} />
+        <motion.p className="event-body" variants={rise} dangerouslySetInnerHTML={{ __html: event.body }} />
+        <motion.div className="event-foot" variants={rise}>
           <span className="event-tag">{event.tag}</span>
           {event.scene && (
-            <motion.div
-              className="event-scene"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={inView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.8, delay: 0.3 }}
-            >
+            <motion.div className="event-scene" variants={sceneRise}>
               <SceneArt type={event.scene} event={event} />
             </motion.div>
           )}
-        </div>
+        </motion.div>
       </motion.div>
 
       <div className="event-dot-wrap">
@@ -505,6 +513,7 @@ function TimelineEvent({ event, index, total }) {
               {chapter}
             </text>
           </svg>
+          <span className="event-heart-tip">{event.tag}</span>
         </motion.div>
       </div>
 
