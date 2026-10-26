@@ -30,7 +30,7 @@ export const timeline = [
   {
     date: 'A few days later',
     title: 'And she became his <em>Sweets</em>',
-    body: "Every name she gave him already felt like home. But he wanted one that was theirs alone. So one afternoon it came out of him quietly, almost by accident. Sweets. Because that was exactly what she was and he had known it since the first day.",
+    body: "Every name she gave him already felt like home. But he wanted one that was hers alone. He had known from the first day that she was a sweetheart in every sense of the word, so he chose the name that said it in one syllable. Sweets. Because that was exactly what she was.",
     tag: 'Sweets & Pookie',
     scene: 'flower',
   },
