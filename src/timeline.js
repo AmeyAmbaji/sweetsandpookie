@@ -2,21 +2,21 @@ export const timeline = [
   {
     date: 'September 26, 2026',
     title: 'An accepted Shaadi.com request',
-    body: "It was Ganpati week in Mumbai, and he was home. The drums, the aartis, the lights of the festival all around him. On a quiet Friday between all of it, a Shaadi profile caught his eye. He sent the connection request. She accepted. A Mumbai girl in Bangalore, a Mumbai boy visiting home, a story quietly began.",
+    body: "It was Ganpati week in Mumbai and he was home. The drums, the aartis, the lights of the festival all around him. On a quiet Friday between all of it, a Shaadi profile caught his eye. He sent the connection request. She accepted. A Mumbai girl in Bangalore, a Mumbai boy visiting home, a story quietly began.",
     tag: 'The first spark',
     scene: 'profiles',
   },
   {
     date: 'September 28, 2026',
     title: 'First hello on WhatsApp',
-    body: "Two days later, the first message. Neither of them knew yet that those tiny bubbles would soon carry entire worlds. Morning updates, late-night thoughts, and the beginnings of them.",
+    body: "Two days later, the first message. Neither of them knew yet that those tiny bubbles would soon carry entire worlds. Morning updates, late-night thoughts and the beginnings of them.",
     tag: 'Chapter one',
     scene: 'chat',
   },
   {
     date: 'October 1, 2026',
-    title: 'A voice, and then there was no going back',
-    body: "The first call. He was still in Mumbai, she was in Bangalore, and somehow the space between them disappeared the moment he heard her voice. From that day on, calling each other became the best part of their days.",
+    title: 'A voice and then there was no going back',
+    body: "The first call. He was still in Mumbai, she was in Bangalore and somehow the space between them disappeared the moment he heard her voice. From that day on, calling each other became the best part of their days.",
     tag: 'The first call',
     scene: 'phone',
   },
@@ -36,7 +36,7 @@ export const timeline = [
   },
   {
     date: 'October 14, 2026',
-    title: 'First video call, and Darling Harbour',
+    title: 'First video call and Darling Harbour',
     body: "The first time they saw each other through a screen. He walked her through Darling Harbour, the city lights behind him, her smile lighting up Sydney in a way the skyline never had.",
     tag: 'First time he saw her smile',
     scene: 'harbour',
@@ -65,7 +65,7 @@ export const timeline = [
   {
     date: 'Every moment with her',
     title: 'What he admired about her',
-    body: "The first thing he noticed was her honesty. She told him the real thing, even on days when pretending would have been easier, and that was the day he knew he was safe with her. He admired how much she carried for the people she loved, how she stayed steady for her family. And on her hardest days she still stopped to ask if he had eaten, which told him everything about her heart. She made the ordinary parts of his day feel like something to look forward to. He is proud to know her, and luckier still to be loved by her.",
+    body: "The first thing he noticed was her honesty. She told him the real thing even on days when pretending would have been easier and that was the day he knew he was safe with her. He admired how much she carried for the people she loved, how she stayed steady for her family. And on her hardest days she still stopped to ask if he had eaten, which told him everything about her heart. She made the ordinary parts of his day feel like something to look forward to. He is proud to know her and luckier still to be loved by her.",
     tag: 'From Pookie, with love',
     scene: 'admire',
     quote: 'You are my favourite person, Sweets.',

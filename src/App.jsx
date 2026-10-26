@@ -551,7 +551,7 @@ export default function App() {
           </h1>
           <div className="hero-names">Sweets <span>&amp;</span> Pookie</div>
           <p className="hero-sub">
-            A Mumbai girl and a Sydney boy, a profile that caught his eye,
+            A Mumbai girl and a Sydney boy, a profile that caught his eye
             and a conversation that quietly turned into everything.
             This is the story of how they found each other,
             exactly when they were meant to.

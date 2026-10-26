@@ -48,7 +48,7 @@ function MemojiEye({ cx, cy, blinkDelay = 0, scale = 1 }) {
 /* ============================================================
    AMEY — Memoji style
    ============================================================ */
-export function Amey({ size = 180, waving = false, blushing = true }) {
+export function Pookie({ size = 180, waving = false, blushing = true }) {
   return (
     <motion.svg
       width={size}
@@ -279,7 +279,7 @@ export function Amey({ size = 180, waving = false, blushing = true }) {
 /* ============================================================
    SMRUTI — Memoji style
    ============================================================ */
-export function Smruti({ size = 180, waving = false, blushing = true }) {
+export function Sweets({ size = 180, waving = false, blushing = true }) {
   return (
     <motion.svg
       width={size}
@@ -484,7 +484,7 @@ export function Smruti({ size = 180, waving = false, blushing = true }) {
         <circle cx="103" cy="112.5" r="0.7" fill="rgba(50,20,10,0.5)" />
         <ellipse cx="99" cy="100" rx="1.2" ry="4" fill="#fff" opacity="0.35" />
 
-        {/* cheek blush — more vivid for Smruti */}
+        {/* cheek blush — more vivid for Sweets */}
         {blushing && (
           <>
             <ellipse cx="68" cy="108" rx="11" ry="7" fill="#ff8fb3" opacity="0.55" />

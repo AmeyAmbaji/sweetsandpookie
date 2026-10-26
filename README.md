@@ -1,6 +1,6 @@
 # Sweets & Pookie — Our Story
 
-An animated, cinematic scroll-driven timeline of Amey & Smruti's story — from a Shaadi match to a Phuket proposal.
+An animated, cinematic scroll-driven timeline of Sweets & Pookie's story — from a Shaadi match to a Phuket proposal.
 
 ## Run it
 
