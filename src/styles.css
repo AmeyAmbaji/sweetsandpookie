@@ -477,37 +477,6 @@ body {
   color: var(--ink);
   font-weight: 500;
 }
-/* Editorial drop cap — like the opening letter of a love note */
-.event-body::first-letter {
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 3.4em;
-  line-height: 0.85;
-  float: left;
-  padding: 0.08em 0.12em 0 0;
-  margin-right: 0.04em;
-  background: linear-gradient(135deg, #f6d8a0 0%, #ff8fb3 60%, #c9a0ff 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 24px rgba(246, 216, 160, 0.25);
-}
-.timeline-event.left .event-body { text-align: right; }
-.timeline-event.left .event-body::first-letter {
-  float: right;
-  padding: 0.08em 0 0 0.12em;
-  margin-left: 0.04em;
-}
-@media (max-width: 768px) {
-  .timeline-event.left .event-body { text-align: left; }
-  .timeline-event.left .event-body::first-letter {
-    float: left;
-    padding: 0.08em 0.12em 0 0;
-    margin-right: 0.04em;
-  }
-}
-
 /* Chapter-dot tooltip */
 .event-heart {
   cursor: default;
