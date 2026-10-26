@@ -23,7 +23,7 @@ export const timeline = [
   {
     date: 'October 5, 2026',
     title: 'And just like that, he became "Pookie"',
-    body: "On his way back home to Sydney, somewhere between flights at Singapore airport, his phone lit up. A single word from her, straight from her heart. Pookie. He read it twice. Smiled at nothing. He loved the word so much he set his WhatsApp status to <em>her Pookie</em> before his flight even boarded, and carried that name onto the plane with him like a secret he already loved.",
+    body: "On his way back home to Sydney, somewhere between flights at Singapore airport, his phone lit up. A single word from her, straight from her heart. Pookie. He read it twice. Smiled at nothing. He loved the word so much he set his WhatsApp status to <em>her Pookie</em> before his flight even boarded and carried that name onto the plane with him like a secret he already loved.",
     tag: 'From her heart',
     scene: 'plane',
   },
