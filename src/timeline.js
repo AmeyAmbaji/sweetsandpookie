@@ -2,14 +2,14 @@ export const timeline = [
   {
     date: 'September 26, 2026',
     title: 'An accepted Shaadi.com request',
-    body: "It was Ganpati week in Mumbai and he was home for it. The drums, the aartis, the lights of the festival all around him. On a quiet Friday somewhere between all of it, a Shaadi profile caught his eye and something in him said just send it. He did. She saw it on her phone in Bangalore and said yes without quite knowing why. A Mumbai girl in Bangalore. A Mumbai boy visiting home. Neither of them knew yet that this was the beginning of everything.",
+    body: "It was Ganpati week in Mumbai and he was home for it. The drums, the aartis, the lights of the festival all around him. On a quiet Friday somewhere between all of it, a Shaadi profile caught his eye and something in him said just send it. He did. She saw it on her phone in Bangalore and accepted the request. A Mumbai girl in Bangalore. A Mumbai boy visiting home. Neither of them knew yet that this was the beginning of everything.",
     tag: 'The first spark',
     scene: 'profiles',
   },
   {
     date: 'September 28, 2026',
     title: 'First hello on WhatsApp',
-    body: "Two days later, the first message. He typed and deleted it three times before sending. She saw it come in and smiled before she opened it. Neither of them knew yet that those tiny bubbles would soon carry entire worlds inside them. Morning updates. Late-night thoughts. The quiet beginnings of them.",
+    body: "Two days later, the first message. Neither of them knew yet that those tiny bubbles would soon carry entire worlds inside them. Morning updates. Late-night thoughts. The quiet beginnings of them.",
     tag: 'Chapter one',
     scene: 'chat',
   },
