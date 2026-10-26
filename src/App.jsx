@@ -551,10 +551,10 @@ export default function App() {
           </h1>
           <div className="hero-names">Sweets <span>&amp;</span> Pookie</div>
           <p className="hero-sub">
-            A story that began with a yes, a message, a voice,
-            and somehow became forever in a single, unforgettable month.
-            This is the story of a Mumbai girl and a Sydney boy
-            who found each other at exactly the right time.
+            A Mumbai girl and a Sydney boy, a profile that caught his eye,
+            and a conversation that quietly turned into everything.
+            This is the story of how they found each other,
+            exactly when they were meant to.
           </p>
         </motion.div>
 
