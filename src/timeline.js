@@ -44,21 +44,21 @@ export const timeline = [
   {
     date: 'October 16, 2026',
     title: 'They were in love',
-    body: "He finally told her the thing he had been holding since the second day. He was in love with her. There was a long second where he could hear her breathing. Then she said it back, soft, like it had been waiting its turn. And somewhere between the tears and the laughter they both knew. Staying away from each other any longer was never going to be an option.",
+    body: "He finally told her the thing he had been holding since the second day. He was in love with her. Then she said it back, soft, like it had been waiting its turn. And somewhere between the tears and the laughter they both knew they wanted to marry each other, right then. Staying away from each other any longer was never going to be an option.",
     tag: 'The day everything became forever',
     scene: 'love',
   },
   {
     date: 'October 25, 2026',
     title: 'The first "I love you" face to face',
-    body: "On a video call, the three words again. But this time, eye to eye. She said it first, barely above a whisper. He said it back and felt it travel somewhere deeper than any text ever had. For a moment neither of them spoke. It felt like the universe paused just long enough to make sure it heard them right.",
+    body: "On a video call, the three words again. But this time, eye to eye. She said it first, loud and clear, with a lovely smile that made him forget how to answer for a second. He said it back and felt it travel somewhere deeper than any text ever had. For a moment neither of them spoke. It felt like the universe paused just long enough to make sure it heard them right.",
     tag: 'I love you, out loud',
     scene: 'videolove',
   },
   {
     date: 'Every single day',
     title: 'Hourly calls, daily life, two hearts in sync',
-    body: "Her quilling and her art. Her workouts, her discipline, the way she moves through a day like it owes her nothing. Her love for ukadiche modak, warm and sweet and homemade. The way she carries the memory of her parents with so much grace it steadies the whole room. The way she loves — fiercely, kindly, completely. He falls for her a little more each day and she notices every time.",
+    body: "Her quilling and her art. Her workouts, her discipline, the way she moves through a day like it owes her nothing. Her love for उकडीचे मोदक, warm and sweet and homemade. The way she carries the memory of her parents with so much grace it steadies the whole room. The way she loves. Fiercely, kindly, completely. He falls for her a little more each day and she notices every time.",
     tag: 'Them, in motion',
     scene: 'daily',
   },
@@ -77,7 +77,7 @@ export const timeline = [
   {
     date: 'One quiet night',
     title: 'What she admired about him',
-    body: "She had been watching him too — quietly, carefully, the way only she can. And one night she told him. What she loved most was the way he carried his parents with him everywhere, the way he thought of them before anything else, the way he was careful with himself in small deliberate ways most people never notice. And then came the sentence that undid him completely. She told him she looked up to him. He had no reply. He had never needed one.",
+    body: "She had been watching him too, quietly, carefully, the way only she can. And one night she told him. What she loved most was the way he carried his parents with him everywhere, the way he thought of them before anything else, the way he was careful with himself in small deliberate ways most people never notice. And then came the sentence that undid him completely. She told him she looked up to him. He had no reply. He had never needed one.",
     tag: "From Sweets, with love",
     scene: 'admire',
   },

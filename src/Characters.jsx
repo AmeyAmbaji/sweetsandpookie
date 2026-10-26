@@ -46,7 +46,7 @@ function MemojiEye({ cx, cy, blinkDelay = 0, scale = 1 }) {
 }
 
 /* ============================================================
-   AMEY — Memoji style
+   POOKIE Memoji style
    ============================================================ */
 export function Pookie({ size = 180, waving = false, blushing = true }) {
   return (
@@ -277,7 +277,7 @@ export function Pookie({ size = 180, waving = false, blushing = true }) {
 }
 
 /* ============================================================
-   SMRUTI — Memoji style
+   SWEETS Memoji style
    ============================================================ */
 export function Sweets({ size = 180, waving = false, blushing = true }) {
   return (
