@@ -16,7 +16,7 @@ export const timeline = [
   {
     date: 'October 1, 2026',
     title: 'A voice and then there was no going back',
-    body: "The first call. He was still in Mumbai, she was in Bangalore and the moment he heard her voice something inside him went still, like a room that had been waiting to be lit. She laughed at something he said and he knew. From that day on, calling each other became the best part of their days. The thing both of them hurried home for.",
+    body: "The first call. He was still in Mumbai, she was in Bangalore and the moment he heard her voice something inside him went still, like a room that had been waiting to be lit. From that day on, calling each other became the best part of their days. The thing both of them hurried home for.",
     tag: 'The first call',
     scene: 'phone',
   },
