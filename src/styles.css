@@ -714,6 +714,125 @@ body {
   .footer-note::before, .footer-note::after { width: 1.5rem; }
 }
 
+/* ===== Password gate ===== */
+.gate {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(169, 125, 255, 0.3), transparent 55%),
+    radial-gradient(ellipse at 70% 80%, rgba(255, 143, 179, 0.25), transparent 60%),
+    linear-gradient(180deg, #0a0618 0%, #150b2e 50%, #0a0618 100%);
+}
+.gate-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 2.4rem 2rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(201, 160, 255, 0.03));
+  border-radius: 24px;
+  backdrop-filter: blur(22px) saturate(150%);
+  -webkit-backdrop-filter: blur(22px) saturate(150%);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  position: relative;
+}
+.gate-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(255, 143, 179, 0.5), rgba(201, 160, 255, 0.25), rgba(143, 227, 255, 0.5));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.gate-emblem {
+  display: flex;
+  justify-content: center;
+  filter: drop-shadow(0 0 20px rgba(255, 143, 179, 0.5));
+  margin-bottom: 1rem;
+}
+.gate-eyebrow {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+}
+.gate-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(2rem, 7vw, 2.6rem);
+  margin: 0 0 0.75rem;
+  background: linear-gradient(135deg, #fff 0%, #ffd0e0 50%, #c9a0ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gate-sub {
+  color: var(--ink-dim);
+  font-size: 0.92rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0 auto 1.5rem;
+  max-width: 24rem;
+}
+.gate-input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font-family: var(--mono);
+  font-size: 1rem;
+  letter-spacing: 0.3em;
+  text-align: center;
+  color: var(--ink);
+  background: rgba(10, 6, 24, 0.5);
+  border: 1px solid rgba(201, 160, 255, 0.3);
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+.gate-input::placeholder { color: rgba(201, 184, 232, 0.35); }
+.gate-input:focus {
+  border-color: rgba(255, 143, 179, 0.6);
+  box-shadow: 0 0 0 3px rgba(255, 143, 179, 0.15);
+}
+.gate-btn {
+  display: block;
+  width: 100%;
+  margin-top: 0.9rem;
+  padding: 0.85rem 1rem;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #1a0d38;
+  background: linear-gradient(135deg, #f6d8a0, #ff8fb3);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 10px 24px rgba(255, 143, 179, 0.25);
+}
+.gate-btn:hover { transform: translateY(-1px); box-shadow: 0 14px 32px rgba(255, 143, 179, 0.35); }
+.gate-btn:active { transform: translateY(0); }
+.gate-card.shake { animation: gate-shake 0.45s cubic-bezier(0.36, 0.07, 0.19, 0.97); }
+.gate-card.shake .gate-input {
+  border-color: #ff5a85;
+  box-shadow: 0 0 0 3px rgba(255, 90, 133, 0.2);
+}
+@keyframes gate-shake {
+  10%, 90% { transform: translateX(-2px); }
+  20%, 80% { transform: translateX(4px); }
+  30%, 50%, 70% { transform: translateX(-8px); }
+  40%, 60% { transform: translateX(8px); }
+}
+
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
